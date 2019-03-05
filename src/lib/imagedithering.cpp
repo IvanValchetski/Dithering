@@ -1,7 +1,11 @@
 #include "imagedithering.h"
 
+<<<<<<< HEAD
 ImageDithering::ImageDithering(const char* const path_to_file, const unsigned int palette):
     _path_to_file{path_to_file}, _palette{palette}
+=======
+ImageDithering::ImageDithering(const char* const path_to_file):_path_to_file{path_to_file},palette{1}
+>>>>>>> 9cc79f53eedfc5996ee1c6aa532a73b8a5967ab5
 {
     image.load(_path_to_file);
 
@@ -11,6 +15,7 @@ ImageDithering::ImageDithering(const char* const path_to_file, const unsigned in
     width = image.width();
     height = image.height();
 
+<<<<<<< HEAD
     median_cut cp(image,_palette,width,height);
     cp.divide_by_bucket();
     cp.color_calculate();
@@ -21,6 +26,8 @@ ImageDithering::ImageDithering(const char* const path_to_file, const unsigned in
     }
 
 
+=======
+>>>>>>> 9cc79f53eedfc5996ee1c6aa532a73b8a5967ab5
 }
 
 void ImageDithering::Floyd_Steinberg()
@@ -94,9 +101,15 @@ void ImageDithering::Atkinson()
 
 void ImageDithering::setPixelValue(int c, int r, double mul, double sub)
 {
+<<<<<<< HEAD
     image(c,r,0,0) += (colors.error_red * mul/sub);
     image(c,r,0,1) += (colors.error_green * mul/sub);
     image(c,r,0,2) += (colors.error_blue * mul/sub);
+=======
+    image(c,r,0,0) += (colors.error_red * (double)mul/(double)sub);
+    image(c,r,0,1) += (colors.error_green * (double)mul/(double)sub);
+    image(c,r,0,2) += (colors.error_blue * (double)mul/(double)sub);
+>>>>>>> 9cc79f53eedfc5996ee1c6aa532a73b8a5967ab5
 }
 
 void ImageDithering::Save(const char *const path_to_file)
@@ -124,9 +137,15 @@ void ImageDithering::setMainPixel(int c, int r)
     colors.green = image(c,r,0,1);
     colors.blue = image(c,r,0,2);
 
+<<<<<<< HEAD
     colors.temp_red = round(_palette * colors.red/255.0) * 255.0/_palette;
     colors.temp_green = round(_palette * colors.green/255.0) * 255.0/_palette;
     colors.temp_blue = round(_palette * colors.green/255.0) * 255.0/_palette;
+=======
+    colors.temp_red = round(palette * colors.red/255.0) * 255.0/palette;
+    colors.temp_green = round(palette * colors.green/255.0) * 255.0/palette;
+    colors.temp_blue = round(palette * colors.green/255.0) * 255.0/palette;
+>>>>>>> 9cc79f53eedfc5996ee1c6aa532a73b8a5967ab5
 
     image(c,r,0,0) = colors.temp_red;
     image(c,r,0,1) = colors.temp_green;
@@ -137,6 +156,7 @@ void ImageDithering::setMainPixel(int c, int r)
     colors.error_blue = (colors.blue - colors.temp_blue);
 
     if(is_gray_scale)
+<<<<<<< HEAD
         image(c,r,0,1) = image(c,r,0,2) = image(c,r,0,0);  
 }
 
@@ -146,6 +166,19 @@ void ImageDithering::Dithering(const int dit_name)
     if(_palette <= 2)
     {
         _palette = 1;
+=======
+        image(c,r,0,1) = image(c,r,0,2) = image(c,r,0,0);
+}
+
+
+void ImageDithering::Dithering(const int dit_name, int factor)
+{
+    this->palette = factor;
+
+    if(palette <= 2)
+    {
+        palette = 1;
+>>>>>>> 9cc79f53eedfc5996ee1c6aa532a73b8a5967ab5
         doGrayscale();
     }
 
