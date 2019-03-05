@@ -9,6 +9,7 @@
 int main()
 {
 
+
     CImg<unsigned char> img("");
     std::unique_ptr<IDither> dit(IDither::do_dithering(Atkinson));
     dit->execute(img,64);
