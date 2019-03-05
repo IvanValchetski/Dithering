@@ -1,0 +1,7 @@
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/build/CMakeFiles/rebuild_cache.dir
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/build/CMakeFiles/MainTask.dir
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/build/CMakeFiles/edit_cache.dir
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/build/src/lib/CMakeFiles/rebuild_cache.dir
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/build/src/lib/CMakeFiles/edit_cache.dir
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/build/src/lib/CMakeFiles/ditlib.dir
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/build/src/lib/CMakeFiles/median.dir
