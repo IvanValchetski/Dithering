@@ -1,14 +1,6 @@
 #ifndef PIXEL_H
 #define PIXEL_H
 
-/*class pixel
-{
-public:
-    int red{};
-    int green{};
-    int blue{};
-};*/
-
 struct RGBColors{
     int red;
     int green;

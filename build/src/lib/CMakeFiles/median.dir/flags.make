@@ -6,5 +6,5 @@ CXX_FLAGS =   -Dcimg_use_tiff -Dcimg_use_jpeg -Dcimg_use_zlib -Dcimg_use_png -Dc
 
 CXX_DEFINES = -Dmedian_EXPORTS
 
-CXX_INCLUDES = -I/usr/include/x86_64-linux-gnu -I/usr/include/OpenEXR -I/usr/local/include/ImageMagick-6 -isystem /usr/include/opencv 
+CXX_INCLUDES = -I/usr/include/x86_64-linux-gnu -I/usr/include/OpenEXR -I/usr/local/include/ImageMagick-6 -isystem /usr/include/opencv -I/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include 
 

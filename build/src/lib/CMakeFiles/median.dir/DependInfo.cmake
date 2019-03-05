@@ -19,6 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/OpenEXR"
   "/usr/local/include/ImageMagick-6"
   "/usr/include/opencv"
+  "../src/lib/include"
   )
 
 # Targets to which this target links.

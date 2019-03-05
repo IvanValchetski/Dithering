@@ -1,37 +1,27 @@
 #include "CImg.h"
-<<<<<<< HEAD
-#include "lib/median_cut.h"
-#include "lib/idither.h"
-#include "lib/atkinson.h"
-#include "lib/burkes.h"
-#include "lib/floyd_steinberg.h"
-#include "lib/sierra.h"
-
-
-using namespace cimg_library;
-=======
-#include "lib/imagedithering.h"
-using namespace std;
-using namespace cimg_library;
-
-
->>>>>>> 9cc79f53eedfc5996ee1c6aa532a73b8a5967ab5
+#include "lib/include/median_cut.h"
+#include "lib/include/idither.h"
+#include "lib/include/atkinson.h"
+#include "lib/include/burkes.h"
+#include "lib/include/floyd_steinberg.h"
+#include "lib/include/sierra.h"
 
 int main()
 {
 
-<<<<<<< HEAD
-    CImg<unsigned char> img("/home/ivan/Downloads/lion.png");
-
+    CImg<unsigned char> img("/home/ivan/Downloads/lena.png");
     std::unique_ptr<IDither> dit(IDither::do_dithering(Atkinson));
     dit->execute(img,64);
 
+    dit.reset(IDither::do_dithering(Floyd));
+    dit->execute(img,64);
 
-=======
-    ImageDithering image("");
-    image.Dithering(4,1);
-    image.Save("");
->>>>>>> 9cc79f53eedfc5996ee1c6aa532a73b8a5967ab5
+    dit.reset(IDither::do_dithering(Sierra));
+    dit->execute(img,64);
+
+    dit.reset(IDither::do_dithering(Burkes));
+    dit->execute(img,64);
+
 
     return 0;
 }

@@ -6,39 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/atkinson.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/atkinson.h
 idither.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/idither.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/idither.h
 
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/burkes.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/burkes.h
 idither.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/idither.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/idither.h
 
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/floyd_steinberg.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/floyd_steinberg.h
 idither.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/idither.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/idither.h
 
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/idither.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/idither.h
 CImg.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/CImg.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/CImg.h
 exception
 -
 vector
 -
 pixel.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/pixel.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/pixel.h
 median_cut.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/median_cut.h
-mutex
--
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/median_cut.h
 memory
 -
 
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/median_cut.h
-iostream
--
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/median_cut.h
 CImg.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/CImg.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/CImg.h
 vector
 -
 functional
@@ -46,27 +42,27 @@ functional
 queue
 -
 pixel.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/pixel.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/pixel.h
 
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/pixel.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/pixel.h
 
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/sierra.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/sierra.h
 idither.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/idither.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/idither.h
 
 /home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/main.cpp
 CImg.h
 /home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/CImg.h
-lib/median_cut.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/median_cut.h
-lib/idither.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/idither.h
-lib/atkinson.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/atkinson.h
-lib/burkes.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/burkes.h
-lib/floyd_steinberg.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/floyd_steinberg.h
-lib/sierra.h
-/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/sierra.h
+lib/include/median_cut.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/median_cut.h
+lib/include/idither.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/idither.h
+lib/include/atkinson.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/atkinson.h
+lib/include/burkes.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/burkes.h
+lib/include/floyd_steinberg.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/floyd_steinberg.h
+lib/include/sierra.h
+/home/ivan/C++/Matrix_cut/own_median/Median_cut/Task/src/lib/include/sierra.h
 

@@ -12,7 +12,7 @@ public:
 
 private:
     void logic() override;
-    void save() override;
+    void save() const override;
 
 };
 
