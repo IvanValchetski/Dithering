@@ -29,7 +29,7 @@ protected:
     unsigned int _palette;
     RGBColors _colors;
 
-    void set_pixel_value(int c, int r, double mul, double sub);
+    void error_diffusion(int c, int r, double mul, double sub);
     void set_main_pixel(int c, int r);
     void get_color_palette();
     virtual void save() const = 0;

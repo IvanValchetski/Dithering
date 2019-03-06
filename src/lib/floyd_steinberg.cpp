@@ -19,13 +19,13 @@ void Floyd_Steinberg::logic()
          {
              set_main_pixel(c, r);
              if(c + 1 < _width)
-                set_pixel_value(c + 1, r,7,16);
+                error_diffusion(c + 1, r,7,16);
              if(c - 1 < _width && r + 1 < _height)
-                set_pixel_value(c - 1, r + 1, 3, 16);
+                error_diffusion(c - 1, r + 1, 3, 16);
              if(r + 1 < _height)
-                set_pixel_value(c, r + 1, 5, 16);
+                error_diffusion(c, r + 1, 5, 16);
              if(c + 1 < _width && r + 1 < _height)
-                set_pixel_value(c + 1, r + 1, 1, 16);
+                error_diffusion(c + 1, r + 1, 1, 16);
          }
 }
 

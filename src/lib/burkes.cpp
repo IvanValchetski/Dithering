@@ -19,19 +19,19 @@ void Burkes::logic()
         {
             set_main_pixel(c, r);
             if(c + 1 < _width)
-                set_pixel_value(c + 1, r, 8,32);
+                error_diffusion(c + 1, r, 8,32);
             if(c + 2 < _width)
-                set_pixel_value(c + 2, r, 4,32);
+                error_diffusion(c + 2, r, 4,32);
             if(c - 1 < _width && r + 1 < _height)
-                set_pixel_value(c - 1, r + 1, 4, 32);
+                error_diffusion(c - 1, r + 1, 4, 32);
             if(c - 2 < _width && r + 1 < _height)
-                set_pixel_value(c - 2, r + 1, 2, 32);
+                error_diffusion(c - 2, r + 1, 2, 32);
             if(r + 1 < _height)
-                set_pixel_value(c, r + 1, 8, 32);
+                error_diffusion(c, r + 1, 8, 32);
             if(c + 1 < _width && r + 1 < _height)
-                set_pixel_value(c + 1, r + 1, 4, 32);
+                error_diffusion(c + 1, r + 1, 4, 32);
             if(c + 2 < _width && r + 1 < _height)
-                set_pixel_value(c + 2, r + 1, 2, 32);
+                error_diffusion(c + 2, r + 1, 2, 32);
         }
 }
 

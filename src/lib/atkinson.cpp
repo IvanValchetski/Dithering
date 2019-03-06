@@ -19,17 +19,17 @@ void Atkinson::logic()
          {
             set_main_pixel(c, r);
             if(c + 1 < _width)
-                set_pixel_value(c + 1, r,1,8);
+                error_diffusion(c + 1, r,1,8);
             if(c + 2 < _width)
-                set_pixel_value(c + 2, r,1,8);
+                error_diffusion(c + 2, r,1,8);
             if(c - 1 < _width && r + 1 < _height )
-                set_pixel_value(c - 1, r + 1, 1, 8);
+                error_diffusion(c - 1, r + 1, 1, 8);
             if(r + 1 < _height )
-                set_pixel_value(c, r + 1, 1, 8);
+                error_diffusion(c, r + 1, 1, 8);
             if(r + 2 < _height)
-                set_pixel_value(c, r + 2, 1, 8);
+                error_diffusion(c, r + 2, 1, 8);
             if(c + 1 < _width && r + 1 < _height)
-                set_pixel_value(c + 1, r + 1, 1, 8);
+                error_diffusion(c + 1, r + 1, 1, 8);
 
          }
 }

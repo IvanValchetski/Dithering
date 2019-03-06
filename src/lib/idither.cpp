@@ -4,7 +4,7 @@
 #include "include/sierra.h"
 #include "include/atkinson.h"
 
-void IDither::set_pixel_value(int c, int r, double mul, double sub)
+void IDither::error_diffusion(int c, int r, double mul, double sub)
 {
     _image(c,r,0,0) += (_colors.error_red * mul/sub);
     _image(c,r,0,1) += (_colors.error_green * mul/sub);
