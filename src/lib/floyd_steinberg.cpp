@@ -7,6 +7,7 @@ void Floyd_Steinberg::execute(CImg<unsigned char>& image, const unsigned int pal
     _width = _image.width();
     _height = _image.height();
 
+    get_color_palette();
     logic();
     save();
 }

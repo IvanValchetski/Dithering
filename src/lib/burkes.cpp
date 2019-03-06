@@ -7,6 +7,7 @@ void Burkes::execute(CImg<unsigned char>& image, const unsigned int palette)
     _width = _image.width();
     _height = _image.height();
 
+    get_color_palette();
     logic();
     save();
 }

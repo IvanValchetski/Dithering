@@ -28,7 +28,6 @@ protected:
     std::vector<RGBColors> _color_palette;
     unsigned int _palette;
     RGBColors _colors;
-    bool _flag{};
 
     void set_pixel_value(int c, int r, double mul, double sub);
     void set_main_pixel(int c, int r);

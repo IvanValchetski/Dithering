@@ -14,6 +14,5 @@ int main()
     std::unique_ptr<IDither> dit(IDither::do_dithering(Atkinson));
     dit->execute(img,64);
 
-
     return 0;
 }

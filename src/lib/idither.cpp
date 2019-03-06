@@ -13,11 +13,7 @@ void IDither::set_pixel_value(int c, int r, double mul, double sub)
 
 void IDither::set_main_pixel(int c, int r)
 {
-    if(!_flag){
-        _flag = true;
-        get_color_palette();
-    }
-
+   
     _colors.red = _image(c,r,0,0);
     _colors.green = _image(c,r,0,1);
     _colors.blue = _image(c,r,0,2);
